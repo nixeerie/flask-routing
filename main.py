@@ -8,3 +8,7 @@ def hello_world():
     today = datetime.now()
     # kwargs - key word arguments
     return render_template("index.html", today=today)
+
+@app.route("/o-mne")
+def about_me():
+    return render_template("o-mne.html")
